@@ -6,6 +6,10 @@ const itemSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
+  price: {
+    type: String,
+    required: true,
+  },
   typeId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Type",
