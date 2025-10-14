@@ -57,7 +57,7 @@ const createController = (Model, modelName, searchFields, populate = "") => {
     try {
       // If there's a file upload, handle the image path
       if (req.file) {
-        req.body.image = `/images/profileImages/${req.file.filename}`;
+        req.body.image = `/${req.file.filename}`;
       }
       // note that this not dynamic for now, only works if the field is 'image'
       // To make it dynamic, you could pass the field name as an additional parameter to createController

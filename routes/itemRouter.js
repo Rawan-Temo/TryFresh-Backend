@@ -4,17 +4,18 @@ const itemController = require("../controllers/itemController");
 const { authenticateToken } = require("../middlewares/authMiddleware");
 const { upload } = require("../middlewares/multerConfiguration");
 const Item = require("../models/item");
+const { deActivateMany } = require("../utils/deActivateMany");
 
 router
   .route("/")
-  .get(authenticateToken, itemController.getAll)
+  .get( itemController.getAll)
   .post(authenticateToken, upload.single("image"), itemController.createOne);
 router.route("/deActivate-many").patch(authenticateToken, async (req, res) => {
   await deActivateMany(Item, req, res);
 }); // PATCH /api/sources/deActivate-many/:id
 router
   .route("/:id")
-  .get(authenticateToken, itemController.getOneById)
+  .get(itemController.getOneById)
   .patch(authenticateToken, itemController.updateOne)
   .delete(authenticateToken, itemController.deleteOne);
 
