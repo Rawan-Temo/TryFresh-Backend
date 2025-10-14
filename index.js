@@ -8,7 +8,7 @@ const path = require("path");
 const app = express();
 
 connection();
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join("./public")));
 app.use(express.json());
 app.use(cors());
 app.use(morgan("dev"));
