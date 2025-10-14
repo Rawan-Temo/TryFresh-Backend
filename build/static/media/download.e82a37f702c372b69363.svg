@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="79" viewBox="0 0 100 79">
+  <defs>
+    <clipPath id="clip-diamonds1">
+      <rect width="100" height="79"/>
+    </clipPath>
+  </defs>
+  <g id="diamonds1" clip-path="url(#clip-diamonds1)">
+    <path id="path" d="M532.386,385.871q.629,10.538-37.467,50.393-14.729-19.54-18.674-24.1-14.827-17.411-20.781-16.993l-.232-3.916,38.571-55q37.433,30.346,38.583,49.622" transform="translate(436.264 -455.232) rotate(90)" opacity="0.1"/>
+  </g>
+</svg>

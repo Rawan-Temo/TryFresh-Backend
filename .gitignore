@@ -4,8 +4,6 @@ pnp.js
 
 /coverage
 
-/build
-/public
 /backups
 
 .DS_Store
