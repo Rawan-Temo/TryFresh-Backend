@@ -27,7 +27,7 @@ exports.deActivateMany = async (model, req, res) => {
     // Step 2: Return success response
     return res.status(200).json({
       status: "success",
-      message: `${result.modifiedCount} out of ${Ids.length}  deactivated successfully.`,
+      message: ` ${Ids.length}  deactivated successfully.`,
       data: null,
     });
   } catch (error) {
